@@ -1,7 +1,7 @@
 <?php 
 require_once __DIR__ . '/Models/Movie.php';
-
-var_dump($movie1);
+require_once __DIR__ . '/data/db.php';
+var_dump($movies);
 
 ?>
 

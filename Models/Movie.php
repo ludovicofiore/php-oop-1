@@ -15,6 +15,6 @@ class Movie {
 }
 
 // istanze
-$movie1 = new Movie('Rocky I', 1976, ['Sylvester Stallone', 'Talia Shire', 'Burt Young']);
-$movie2 = new Movie('Rocky II', 1979, ['Sylvester Stallone', 'Carl Weathers', 'Burgess Meredith']);
-$movie3 = new Movie('Rocky III', 1982, ['Sylvester Stallone', 'Carl Weathers', 'Mr. T']);
+// $movie1 = new Movie('Rocky I', 1976, ['Sylvester Stallone', 'Talia Shire', 'Burt Young']);
+// $movie2 = new Movie('Rocky II', 1979, ['Sylvester Stallone', 'Carl Weathers', 'Burgess Meredith']);
+// $movie3 = new Movie('Rocky III', 1982, ['Sylvester Stallone', 'Carl Weathers', 'Mr. T']);
