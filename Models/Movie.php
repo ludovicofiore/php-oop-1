@@ -1,16 +1,19 @@
 <?php
+require_once __DIR__ . '/Genre.php';
 
 class Movie {
     // attributi
     public $title;
     public $year;
     public $actors = [];
+    public $genre;
 
     // costruttore
-    function __construct($_title, $_year, $_actors) {
+    function __construct($_title, $_year, $_actors, Genre $_genre) {
         $this->title = $_title;
         $this->year = $_year;
         $this->actors = $_actors;
+        $this->genre = $_genre;
     }
 
 
@@ -35,6 +38,10 @@ class Movie {
         echo $list;
 
     }
+
+    public function printGenre(){
+        echo $this->genre->name;
+    }
 }
 
 
@@ -45,7 +52,7 @@ class Movie {
 // $movie3 = new Movie('Rocky III', 1982, ['Sylvester Stallone', 'Carl Weathers', 'Mr. T']);
 
 $movies = [
-    new Movie('Rocky I', 1976, ['Sylvester Stallone', 'Talia Shire', 'Burt Young']),
-    new Movie('Rocky II', 1979, ['Sylvester Stallone', 'Carl Weathers', 'Burgess Meredith']),
-    new Movie('Rocky III', 1982, ['Sylvester Stallone', 'Carl Weathers', 'Mr. T']),
+    new Movie('Rocky I', 1976, ['Sylvester Stallone', 'Talia Shire', 'Burt Young'], new Genre('azione')),
+    new Movie('Rocky II', 1979, ['Sylvester Stallone', 'Carl Weathers', 'Burgess Meredith'], new Genre('avventura')),
+    new Movie('Rocky III', 1982, ['Sylvester Stallone', 'Carl Weathers', 'Mr. T'], new Genre('thriller')),
 ];

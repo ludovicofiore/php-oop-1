@@ -1,7 +1,9 @@
 <?php 
 require_once __DIR__ . '/Models/Movie.php';
+require_once __DIR__ . '/Models/Genre.php';
 // require_once __DIR__ . '/data/db.php';
 // var_dump($movies);
+// var_dump($genres);
 
 ?>
 
@@ -27,6 +29,8 @@ require_once __DIR__ . '/Models/Movie.php';
                     <p class="card-text">Attori:
                        <?php $movie->printActors() ?>
                     </p>
+
+                    <h6>Genere: <?php $movie->printGenre()  ?></h6>
                 </div>
             </div>
         <?php endforeach; ?>
