@@ -1,7 +1,7 @@
 <?php 
 require_once __DIR__ . '/Models/Movie.php';
 
-var_dump($Movie);
+var_dump($movie1);
 
 ?>
 
