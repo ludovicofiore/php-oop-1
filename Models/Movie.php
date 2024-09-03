@@ -12,7 +12,32 @@ class Movie {
         $this->year = $_year;
         $this->actors = $_actors;
     }
+
+
+    public function printTitle(){
+        
+        echo $this->title;
+    }
+
+    public function printYear(){
+        echo $this->year;
+    }
+
+    public function printActors(){
+        $list = '<ul>';
+        
+        
+        foreach($this->actors as $actor){
+            $list .= "<li>$actor</li>";
+            
+        }
+        $list .= '</ul>';
+        echo $list;
+
+    }
 }
+
+
 
 // istanze
 // $movie1 = new Movie('Rocky I', 1976, ['Sylvester Stallone', 'Talia Shire', 'Burt Young']);
